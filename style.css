@@ -1,0 +1,59 @@
+:root,
+[data-bs-theme=light] {
+    --bs-primary-rgb: 235, 235, 235;
+    --bs-secondary-rgb: 103, 67, 233;
+    --bs-dark-rgb: 50, 50, 50;
+}
+
+body header {
+    background: url('/media/img/data-centre.png') center;
+    z-index: 0;
+}
+#pagesHeader {
+    background-image: url('/media/img/people.jpg');
+}
+
+header::before {
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: #00000081;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    backdrop-filter: blur(1.2px);
+    /* background-color: rgb(19, 19, 19); */
+}
+
+.btn-secondary {
+    background-color: rgb(103, 67, 233);
+    transition: all .2s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(47, 28, 117, 0.801);
+    outline: 1px solid rgb(103, 67, 233);
+    transition: all .2s ease-in-out;
+    transform: scaleX(1.10);
+}
+
+
+#textInput {
+    background-color: rgba(255, 255, 255, 0.479);
+    border: 1px solid rgb(103, 67, 233);
+}
+
+#textInput:focus {
+    box-shadow: 0 0 9px 1px rgba(49, 33, 105, 0.76);
+}
+
+
+.gradient-toPurple {
+    background: linear-gradient(225deg, rgba(142, 110, 255, 0.89) 15%, rgba(184, 166, 255, 0.938) 30%, rgba(243, 243, 243, 0.499) 85%);
+    backdrop-filter: blur(100px);
+}
+
+.company {
+    text-transform: capitalize;
+}
